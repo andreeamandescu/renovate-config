@@ -1,0 +1,19 @@
+{
+  "extends": [
+    "config:base",
+    "group:allNonMajor",
+    ":separateMultipleMajorReleases",
+    ":ignoreUnstable",
+    ":enableVulnerabilityAlertsWithLabel(security)",
+    ":rebaseStalePrs",
+    ":npm",
+    "npm:unpublishSafe"
+  ],
+  "packageRules": [
+    {
+      "bumpVersion": "patch",
+      "commitMessagePrefix": ":truck: chore(deps)",
+      "labels": ["maintenance", "renovate"]
+    }
+  ]
+}
