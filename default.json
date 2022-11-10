@@ -12,7 +12,7 @@
   "packageRules": [
     {
       "bumpVersion": "patch",
-      "commitMessagePrefix": ":truck: chore(deps)",
+      "commitMessagePrefix": "chore(deps)",
       "labels": ["maintenance", "renovate"]
     }
   ]
