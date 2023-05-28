@@ -10,11 +10,12 @@
     ":npm",
     "npm:unpublishSafe"
   ],
+  "commitMessageLowerCase": "auto",
   "packageRules": [
     {
       "bumpVersion": "patch",
       "commitMessagePrefix": "chore(deps):",
-      "commitMessageLowerCase": "auto",
+      "commitMessageAction": "update",
       "labels": ["maintenance", "renovate"]
     }
   ]
