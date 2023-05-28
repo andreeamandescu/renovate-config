@@ -15,11 +15,7 @@
       "bumpVersion": "patch",
       "commitMessagePrefix": "chore(deps):",
       "commitMessageLowerCase": "auto",
-      "labels": ["maintenance", "renovate"],
-      {
-        "matchManagers": ["github-actions"],
-        "commitMessageTopic": "{{depName}}"
-      }
+      "labels": ["maintenance", "renovate"]
     }
   ]
 }
