@@ -13,8 +13,13 @@
   "packageRules": [
     {
       "bumpVersion": "patch",
-      "commitMessagePrefix": "chore(deps)",
-      "labels": ["maintenance", "renovate"]
+      "commitMessagePrefix": "chore(deps):",
+      "commitMessageLowerCase": "auto",
+      "labels": ["maintenance", "renovate"],
+      {
+        "matchManagers": ["github-actions"],
+        "commitMessageTopic": "{{depName}}"
+      }
     }
   ]
 }
